@@ -1,92 +1,37 @@
 # -*- coding: utf-8 -*-
 """
-Charles Truscott Watters
 New paradigm Rubik's Cube Solving algorithm
 
-Thank you Byron Central Hospital, edX, HarvardX and MITx
+Charles Thomas Wallace Truscott
+(Computational Thinking with Python MITx, Using Python for Research Harvard T.H. Chan School of Medicine)
+
+"If I had six hours to chop down a tree, I would spend the first four sharpening the axe" - Benjamin Franklin
+
+Thank you so much Byron Central Hospital, John Flynn Private Hospital, Gold Coast University Hospital.
+
+Very proud of my optimal, dynamic programming, matrix computation algorithm to solve the 2 x 2 Rubik's cube. 
 
 Copyright Charles Truscott, 2024 December
 
-Byron Bay, NSW 2481
+Suffolk Park / Byron Bay, NSW 2481
 
+I love you Tai, I love you Mark - beloved father. I love you Rodney.
 
-n = RubiksState(['W', 'O', 'G'], ['Y', 'O', 'G'], ['W', 'R', 'G'], ['Y', 'R', 'G'], ['W', 'O', 'B'], ['Y', 'O', 'B'], ['W', 'R', 'B'], ['Y','R', 'B'], [])
-Front face: ['G', 'G', 'G', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'B', 'B', 'B']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'Y', 'Y', 'Y']
+Thank you so much United States Department of Defence, Offensive Security, MIT faculty.
 
-n = n.D()
-Front face: ['G', 'G', 'O', 'O']
-Left Face: ['O', 'O', 'B', 'B']
-Right Face: ['R', 'R', 'G', 'G']
-Back Face: ['B', 'B', 'R', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'Y', 'Y', 'Y']
+I have been on the Centrelink Disability pension for 12 years because of Schizophrenia, and a brain injury, sleep disorder and memory disorder.
 
-n.is_solved()
-Out[15]: False
+I recently walked into an employment agency and I was very tickled pink to put MITx and HarvardX on the resume.
 
-n = n.Dinv()
-Front face: ['G', 'G', 'G', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'B', 'B', 'B']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'Y', 'Y', 'Y']
+I may get my dream tech career here in Byron Bay, but there is not circumstantially the industry locally to need to hire a full-wage programmer, data scientist or cybersecurity consultant.
 
-n.is_solved()
-Solved: ['D', 'D inverse']
-Out[17]: True
+I may be the only one in the nation or globally working on this problem on Christmas Eve 2024.
 
+Very excited to return to society after forced disappearance.
 
+Thank you General Michael Hayden CIA NSA ODNI
 
-
-n = RubiksState(['W', 'O', 'G'], ['Y', 'O', 'G'], ['W', 'R', 'G'], ['Y', 'R', 'G'], ['W', 'O', 'B'], ['Y', 'O', 'B'], ['W', 'R', 'B'], ['Y','R', 'B'], [])
-Front face: ['G', 'G', 'G', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'B', 'B', 'B']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'Y', 'Y', 'Y']
-
-n = n.L()
-Front face: ['Y', 'G', 'Y', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'W', 'B', 'W']
-Up face: ['G', 'W', 'G', 'W']
-Down face:['B', 'Y', 'B', 'Y']
-
-n = n.R()
-Front face: ['Y', 'Y', 'Y', 'Y']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['W', 'W', 'W', 'W']
-Up face: ['G', 'G', 'G', 'G']
-Down face:['B', 'B', 'B', 'B']
-
-n = n.Rinv()
-Front face: ['Y', 'G', 'Y', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'W', 'B', 'W']
-Up face: ['G', 'W', 'G', 'W']
-Down face:['B', 'Y', 'B', 'Y']
-
-n = n.Linv()
-Front face: ['G', 'G', 'G', 'G']
-Left Face: ['O', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'R']
-Back Face: ['B', 'B', 'B', 'B']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'Y', 'Y', 'Y']
-
-n.is_solved()
-Solved: ['L', 'R', 'R inverse', 'L inverse']
-Out[11]: True
+Thank you Carl Joseph Truscott former Assistant Director General of the United States Secret Service, BATF
 
 
 """
@@ -294,10 +239,9 @@ from queue import deque
 import sys
 def Charles():
     States = deque([])
-    n = RubiksState(['W', 'O', 'G'], ['Y', 'O', 'G'], ['W', 'R', 'G'], ['Y', 'R', 'G'], ['W', 'O', 'B'], ['Y', 'B', 'R'], ['W', 'R', 'B'], ['Y','B', 'O'], [])
-    n = RubiksState(['W', 'O', 'G'], ['Y', 'O', 'G'], ['W', 'R', 'G'], ['Y', 'R', 'G'], ['W', 'O', 'B'], ['Y', 'O', 'B'], ['W', 'R', 'B'], ['Y','R', 'B'], [])
     n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
-    all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
+#    all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
+    initial_state = n.orientation
 #    print(all_states)
 #    sys.exit(1)
     #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
@@ -311,8 +255,8 @@ def Charles():
     for move in moves:
         States.append(move(States[0]))
     print(States)
-    for state in States:
-        print("Is solved: {}".format(state.is_solved()))
+#    for state in States:
+#        print("Is solved: {} Front Face: {}, Left Face: {}, Right Face:{} Back Face: {}, Up face: {}, Down face: {}".format(state.is_solved(), state.front_face, state.left_face, state.right_face, state.back_face, state.up_face, state.down_face))
 #    while n < 8 ** 6:
 #        state = States.popleft()
 #        for move in moves:
@@ -342,6 +286,12 @@ def Charles():
 #                break
         if state.is_solved() == True:
             solved = True
+            print("Initial State:\nFront Face: {}\nLeft Face: {}\nRight Face: {}\nBack Face: {}\nUp Face: {}\nDown Face:{}".format(n.front_face, n.left_face, n.right_face, n.back_face, n.up_face, n.down_face))
+            print("Solved State: Front Face: {}, Left Face: {}, Right Face:{} Back Face: {}, Up face: {}, Down face: {}\n".format(state.front_face, state.left_face, state.right_face, state.back_face, state.up_face, state.down_face))
+            print("********")
+            print("Moves: {}".format(state.moves))
+            print("*******")
+            print("Charles Truscott Watters, Byron Bay NSW 2481")
             break
 #        c += 1
 
