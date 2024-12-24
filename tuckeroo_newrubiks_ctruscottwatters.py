@@ -80,7 +80,14 @@ class RubiksState(object):
         """ TLF to BLB, BLB to TLF, TLB to BLF, BLF to TLB """
         ntlf, nblf, ntlb, nblb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
         ttlf, tblf, ttlb, tblb = self.tlf, self.blf, self.tlb, self.blb
-        pass
+        nblb[0], nblb[1], nblb[2] = ttlf[0], ttlf[1], ttlf[2]
+        ntlf[0], ntlf[1], ntlf[2] = tblb[0], tblb[1], tblb[2]
+        nblf[0], nblf[1], nblf[2] = ttlb[0], ttlb[1], ttlb[2]
+        ntlb[0], ntlb[1], ntlb[2] = tblf[0], tblf[1], tblf[2]
+        moves = self.moves.copy()
+        moves.append('L2')
+        n = RubiksState(ntlf, nblf, self.trf.copy(), self.brf.copy(), ntlb, nblb, self.trb.copy(), self.brb.copy(), moves)
+        return n
     def Linv(self):
         """ TLF to BLF, BLF to BLB, BLB to TLB, TLB to TLF """
         
@@ -112,8 +119,17 @@ class RubiksState(object):
         return n
     def R2(self):
         """ TRF to BRB, BRB to TRF, BRF to TRB, TRB to BRF """
+        ttrf, tbrf, ttrb, tbrb = self.trf, self.brf, self.trb, self.brb
         ntrf, nbrf, ntrb, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
-        pass
+        nbrb[0], nbrb[1], nbrb[2] = ttrf[0], ttrf[1], ttrf[2]
+        ntrf[0], ntrf[1], ntrf[2] = tbrb[0], tbrb[1], tbrb[2]
+        ntrb[0], ntrb[1], ntrb[2] = tbrf[0], tbrf[1], tbrf[2]
+        nbrf[0], nbrf[1], nbrf[2] = ttrb[0], ttrb[1], ttrb[2]
+        moves = self.moves.copy()
+        moves.append('R2')
+        n = RubiksState(self.tlf.copy(), self.blf.copy(), ntrf, nbrf, self.tlb.copy(), self.blb.copy(), ntrb, nbrb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def Rinv(self):
         """ TRF to BRF, BRF to BRB, BRB to TRB, TRB to TRF """
         ttrf, tbrf, ttrb, tbrb = self.trf, self.brf, self.trb, self.brb
@@ -127,7 +143,7 @@ class RubiksState(object):
         n = RubiksState(self.tlf.copy(), self.blf.copy(), ntrf, nbrf, self.tlb.copy(), self.blb.copy(), ntrb, nbrb, moves)
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
         return n
-        pass
+# From here below
     def U(self):
         """ TLF to TRF, TRF to TRB, TRB to TLB, TLB to TLF """
         ntlf, ntlb, ntrf, ntrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -142,8 +158,16 @@ class RubiksState(object):
         return n
     def U2(self):
         """ TLF to TRB, TRB to TLF, TRF to TLB, TLB to TRF """
+        ttlf, ttrf, ttlb, ttrb = self.tlf, self.trf, self.tlb, self.trb
         ntlf, ntlb, ntrf, ntrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
-        pass
+        ntrb[0], ntrb[1], ntrb[2] = ttlf[0], ttlf[1], ttlf[2]
+        ntlf[0], ntlf[1], ntlf[2] = ttrb[0], ttrb[1], ttrb[2]
+        ntlb[0], ntlb[1], ntlb[2] = ttrf[0], ttrf[1], ttrf[2]
+        ntrf[0], ntrf[1], ntrf[2] = ttlb[0], ttlb[1], ttlb[2]
+        moves = self.moves.copy()
+        moves.append('U2')
+        n = RubiksState(ntlf, self.blf, ntrf, self.brf, ntlb, self.blb, ntrb, self.brb, moves)
+        return n
     def Uinv(self):
         """ TLF to TLB, TLB to TRB, TRB to TRF, TRF to TLF """
         ntlf, ntlb, ntrf, ntrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -172,7 +196,16 @@ class RubiksState(object):
         return n
     def D2(self):
         """ BLF to BRB, BRB to BLF, BRF to BLB, BLB to BRF """
-        pass
+        nblf, nblb, nbrf, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
+        tblf, tbrf, tbrb, tblb = self.blf, self.brf, self.brb, self.blb
+        nbrb[0], nbrb[1], nbrb[2] = tblf[0], tblf[1], tblf[2]
+        nblf[0], nblf[1], nblf[2] = tbrb[0], tbrb[1], tbrb[2]
+        nblb[0], nblb[1], nblb[2] = tbrf[0], tbrf[1], tbrf[2]
+        nbrf[0], nbrf[1], nbrf[2] = tblb[0], tblb[1], tblb[2]
+        moves.append('D2')
+        n = RubiksState(self.tlf, nblf, self.trf, nbrf, self.tlb, nblb, self.trb, nbrb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def Dinv(self):
         """ BLF to BLB, BLB to BRB, BRB to BRF, BRF to BLF """
         nblf, nblb, nbrf, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -186,7 +219,7 @@ class RubiksState(object):
         n = RubiksState(self.tlf, nblf, self.trf, nbrf, self.tlb, nblb, self.trb, nbrb, moves)
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
         return n
-        pass
+# From here
     def F(self):
         """ TLF to BLF, BLF to BRF, BRF to TRF, TRF to TLF """
         ntlf, nblf, ntrf, nbrf = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -202,11 +235,30 @@ class RubiksState(object):
         return n
     def F2(self):
         """ TLF to BRF, BRF to TLF, TRF to BLF, BLF to TRF """
+        ttlf, ttrf, tblf, tbrf = self.tlf, self.trf, self.blf, self.brf
         ntlf, nblf, ntrf, nbrf = [0] * 3, [0] * 3, [0] * 3, [0] * 3
-        pass
+        nbrf[0], nbrf[1], nbrf[2] = ttlf[0], ttlf[1], ttlf[2]
+        ntlf[0], ntlf[1], ntlf[2] = tbrf[0], tbrf[1], tbrf[2]
+        nblf[0], nblf[1], nblf[2] = ttrf[0], ttrf[1], ttrf[2]
+        ntrf[0], ntrf[1], ntrf[2] = tblf[0], tblf[1], tblf[2]
+        moves = self.moves.copy()
+        moves.append('F2')
+        n = RubiksState(ntlf, nblf, ntrf, nbrf, self.tlb, self.blb, self.trb, self.brb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def Finv(self):
         """ TLF to TRF, TRF to BRF, BRF to BLF, BLF to TLF """
-        pass
+        ntlf, nblf, ntrf, nbrf = [0] * 3, [0] * 3, [0] * 3, [0] * 3
+        ttlf, ttrf, tblf, tbrf = self.tlf, self.trf, self.blf, self.brf
+        ntrf[0], ntrf[1], ntrf[2] = ttlf[1], ttlf[0], ttlf[2]
+        nbrf[0], nbrf[1], nbrf[2] = ttrf[1], ttrf[0], ttrf[2]
+        nblf[0], nblf[1], nblf[2] = tbrf[1], tbrf[0], tbrf[2]
+        ntlf[0], ntlf[1], ntlf[2] = tblf[1], tblf[0], tblf[2]
+        moves = self.moves.copy()
+        moves.append('F inverse')
+        n = RubiksState(ntlf, nblf, ntrf, nbrf, self.tlb, self.blb, self.trb, self.brb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def B(self):
         """ TLB to BLB, BLB to BRB, BRB to TRB, TRB to TLB """
         ntlb, nblb, ntrb, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -221,12 +273,31 @@ class RubiksState(object):
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
         return n
     def B2(self):
-        """ TLB to BLB, BLB to TLB, TRB to BLB, BLB to TRB """
+        """ TLB to BRB, BRB to TLB, TRB to BLB, BLB to TRB """
+        ttlb, tblb, ttrb, tbrb = self.tlb, self.blb, self.trb, self.brb
         ntlb, nblb, ntrb, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
-        pass
+        nbrb[0], nbrb[1], nbrb[2] = ttlb[0], ttlb[1], ttlb[2]
+        ntlb[0], ntlb[1], ntlb[2] = tbrb[0], tbrb[1], tbrb[2]
+        nblb[0], nblb[1], nblb[2] = ttrb[0], ttrb[1], ttrb[2]
+        ntrb[0], ntrb[1], ntrb[2] = tblb[0], tblb[1], tblb[2]
+        moves = self.moves.copy()
+        moves.append('B2')
+        n = RubiksState(self.tlf, self.blf, self.trf, self.brf, ntlb, nblb, ntrb, nbrb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def Binv(self):
         """ BLB to TLB, TLB to TRB, TRB to BRB, BRB to BLB """
-        pass
+        ntlb, nblb, ntrb, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
+        ttlb, tblb, ttrb, tbrb = self.tlb, self.blb, self.trb, self.brb
+        ntlb[0], ntlb[1], ntlb[2] = tblb[1], tblb[0], tblb[2]
+        ntrb[0], ntrb[1], ntrb[2] = ttlb[1], ttlb[0], ttlb[2]
+        nbrb[0], nbrb[1], nbrb[2] = ttrb[1], ttrb[0], ttrb[2]
+        nblb[0], nblb[1], nblb[2] = tbrb[1], tbrb[0], tbrb[2]
+        moves = self.moves.copy()
+        moves.append("B inverse")
+        n = RubiksState(self.tlf, self.blf, self.trf, self.brf, ntlb, nblb, ntrb, nbrb, moves)
+        #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
+        return n
     def is_solved(self):
         if self.blb == ['Y', 'O', 'B'] and self.tlb == ['W', 'O', 'B'] and self.brb == ['Y', 'R', 'B'] and self.trb == ['W', 'R', 'B'] and self.blf == ['Y', 'O', 'G'] and self.tlf == ['W', 'O', 'G'] and self.brf == ['Y', 'R', 'G'] and self.trf == ['W', 'R', 'G']:
             print('Solved: {}'.format(self.moves))
@@ -295,4 +366,4 @@ def Charles():
             break
 #        c += 1
 
-Charles()
+#Charles()
