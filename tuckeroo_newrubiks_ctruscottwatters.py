@@ -202,6 +202,7 @@ class RubiksState(object):
         nblf[0], nblf[1], nblf[2] = tbrb[0], tbrb[1], tbrb[2]
         nblb[0], nblb[1], nblb[2] = tbrf[0], tbrf[1], tbrf[2]
         nbrf[0], nbrf[1], nbrf[2] = tblb[0], tblb[1], tblb[2]
+        moves = self.moves.copy()
         moves.append('D2')
         n = RubiksState(self.tlf, nblf, self.trf, nbrf, self.tlb, nblb, self.trb, nbrb, moves)
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
@@ -286,13 +287,14 @@ class RubiksState(object):
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
         return n
     def Binv(self):
-        """ BLB to TLB, TLB to TRB, TRB to BRB, BRB to BLB """
+        """ BLB to TLB, TLB to TRB, TRB to BRB, BRB to BLB"""
         ntlb, nblb, ntrb, nbrb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
         ttlb, tblb, ttrb, tbrb = self.tlb, self.blb, self.trb, self.brb
-        ntlb[0], ntlb[1], ntlb[2] = tblb[1], tblb[0], tblb[2]
-        ntrb[0], ntrb[1], ntrb[2] = ttlb[1], ttlb[0], ttlb[2]
-        nbrb[0], nbrb[1], nbrb[2] = ttrb[1], ttrb[0], ttrb[2]
-        nblb[0], nblb[1], nblb[2] = tbrb[1], tbrb[0], tbrb[2]
+        ntlb[1], ntlb[0], ntlb[2] = tblb[0], tblb[1], tblb[2] 
+        ntrb[1], ntrb[0], ntrb[2] = ttlb[0], ttlb[1], ttlb[2]
+        nbrb[1], nbrb[0], nbrb[2] = ttrb[0], ttrb[1], ttrb[2]
+        nblb[1], nblb[0], nblb[2] = tbrb[0], tbrb[1], tbrb[2]
+
         moves = self.moves.copy()
         moves.append("B inverse")
         n = RubiksState(self.tlf, self.blf, self.trf, self.brf, ntlb, nblb, ntrb, nbrb, moves)
@@ -310,13 +312,15 @@ from queue import deque
 import sys
 def Charles():
     States = deque([])
-    n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
-#    all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
+#    n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
+    all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
+    n = RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
     initial_state = n.orientation
 #    print(all_states)
 #    sys.exit(1)
     #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
-    moves = [lambda s: s.L(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.B()]
+    moves = [lambda s: s.L(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.F(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.Binv()]
+ #   moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
     States.append(n)
     c = 0
     solved = False
@@ -355,6 +359,14 @@ def Charles():
 #            if t.orientation in all_states:
 #                print('Solved: {}'.format(t.moves))
 #                break
+        if state.orientation in all_states:
+            solved = True
+            print("Initial State:\nFront Face: {}\nLeft Face: {}\nRight Face: {}\nBack Face: {}\nUp Face: {}\nDown Face:{}".format(n.front_face, n.left_face, n.right_face, n.back_face, n.up_face, n.down_face))
+            print("Solved State: Front Face: {}, Left Face: {}, Right Face:{} Back Face: {}, Up face: {}, Down face: {}\n".format(state.front_face, state.left_face, state.right_face, state.back_face, state.up_face, state.down_face))
+            print("********")
+            print("Moves: {}".format(state.moves))
+            print("*******")
+            print("Charles Truscott Watters, Byron Bay NSW 2481")
         if state.is_solved() == True:
             solved = True
             print("Initial State:\nFront Face: {}\nLeft Face: {}\nRight Face: {}\nBack Face: {}\nUp Face: {}\nDown Face:{}".format(n.front_face, n.left_face, n.right_face, n.back_face, n.up_face, n.down_face))
@@ -366,4 +378,4 @@ def Charles():
             break
 #        c += 1
 
-#Charles()
+Charles()
