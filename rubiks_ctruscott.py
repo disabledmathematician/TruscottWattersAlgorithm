@@ -1,166 +1,63 @@
+"""
+New paradigm Rubik's Cube Solving algorithm
 
-# Algorithn conceived while a patient at Byron Bay Hospital Tuckeroo
+Charles Thomas Wallace Truscott
+(Computational Thinking with Python MITx, Using Python for Research Harvard T.H. Chan School of Medicine)
 
-# Charles Thomas Wallace Truscott
-# Thank you Eric Grimson, John Guttag and Ana Bell and the MIT faculty 
+"If I had six hours to chop down a tree, I would spend the first four sharpening the axe" - Benjamin Franklin
 
-# Thank you edX.org
+Thank you so much Byron Central Hospital, John Flynn Private Hospital, Gold Coast University Hospital.
 
-# Byron Bay NSW 2481
-""" Front face: ['G', 'G', 'G', 'Y']
+Very proud of my optimal, dynamic programming, matrix computation algorithm to solve the 2 x 2 Rubik's cube. 
+
+Copyright Charles Truscott, 2024 December
+
+Suffolk Park / Byron Bay, NSW 2481
+
+I love you Tai, I love you Mark - beloved father. I love you Rodney.
+
+Thank you so much United States Department of Defence, Offensive Security, MIT faculty.
+
+I have been on the Centrelink Disability pension for 12 years because of Schizophrenia, and a brain injury, sleep disorder and memory disorder.
+
+I recently walked into an employment agency and I was very tickled pink to put MITx and HarvardX on the resume.
+
+I may get my dream tech career here in Byron Bay, but there is not circumstantially the industry locally to need to hire a full-wage programmer, data scientist or cybersecurity consultant.
+
+I may be the only one in the nation or globally working on this problem on Christmas Eve 2024.
+
+Very excited to return to society after forced disappearance.
+
+Thank you General Michael Hayden CIA NSA ODNI
+
+Thank you Carl Joseph Truscott former Assistant Director General of the United States Secret Service, BATF
+
+Front face: ['G', 'G', 'G', 'Y']
 Left Face: ['O', 'O', 'Y', 'O']
 Right Face: ['R', 'R', 'B', 'R']
 Back Face: ['B', 'B', 'B', 'R']
 Up face: ['W', 'W', 'W', 'W']
 Down face:['Y', 'O', 'G', 'Y']
-0b1000000000000000000
-0b100000000000000000
-0b10000000000000000
-0b1000000000000000
-0b100000000000000
-0b10000000000000
-0b1000000000000
-0b100000000000
-0b10000000000
-0b1000000000
-0b100000000
-0b10000000
-0b1000000
-0b100000
-0b10000
-0b1000
-0b100
-0b10
-0b1
-B inverse
 Front face: ['G', 'G', 'G', 'Y']
-Left Face: ['G', 'O', 'Y', 'O']
-Right Face: ['R', 'W', 'B', 'W']
-Back Face: ['B', 'R', 'B', 'B']
-Up face: ['Y', 'O', 'W', 'W']
-Down face:['Y', 'O', 'R', 'R']
-B2
-Front face: ['G', 'G', 'G', 'Y']
-Left Face: ['W', 'O', 'W', 'O']
-Right Face: ['R', 'Y', 'B', 'G']
-Back Face: ['B', 'B', 'R', 'B']
-Up face: ['R', 'R', 'W', 'W']
-Down face:['Y', 'O', 'O', 'Y']
-B
-Front face: ['G', 'G', 'G', 'Y']
-Left Face: ['R', 'O', 'R', 'O']
-Right Face: ['R', 'Y', 'B', 'O']
-Back Face: ['R', 'B', 'B', 'B']
-Up face: ['Y', 'G', 'W', 'W']
-Down face:['Y', 'O', 'W', 'W']
-F inverse
-Front face: ['G', 'G', 'Y', 'G']
-Left Face: ['R', 'Y', 'R', 'O']
-Right Face: ['W', 'Y', 'W', 'O']
-Back Face: ['R', 'B', 'B', 'B']
-Up face: ['Y', 'G', 'O', 'O']
-Down face:['B', 'R', 'W', 'W']
-F2
-Front face: ['G', 'Y', 'G', 'G']
-Left Face: ['R', 'W', 'R', 'W']
-Right Face: ['O', 'Y', 'Y', 'O']
-Back Face: ['R', 'B', 'B', 'B']
-Up face: ['Y', 'G', 'R', 'B']
-Down face:['O', 'O', 'W', 'W']
-F
-Front face: ['Y', 'G', 'G', 'G']
-Left Face: ['R', 'B', 'R', 'R']
-Right Face: ['O', 'Y', 'O', 'O']
-Back Face: ['R', 'B', 'B', 'B']
-Up face: ['Y', 'G', 'O', 'Y']
-Down face:['W', 'W', 'W', 'W']
-D inverse
-Front face: ['Y', 'G', 'O', 'O']
-Left Face: ['R', 'B', 'G', 'G']
-Right Face: ['O', 'Y', 'B', 'B']
-Back Face: ['R', 'B', 'R', 'R']
-Up face: ['Y', 'G', 'O', 'Y']
-Down face:['W', 'W', 'W', 'W']
-D2
-Front face: ['Y', 'G', 'R', 'R']
-Left Face: ['R', 'B', 'B', 'B']
-Right Face: ['O', 'Y', 'G', 'G']
-Back Face: ['R', 'B', 'O', 'O']
-Up face: ['Y', 'G', 'O', 'Y']
-Down face:['W', 'W', 'W', 'W']
-D
-Front face: ['Y', 'G', 'B', 'B']
-Left Face: ['R', 'B', 'O', 'O']
-Right Face: ['O', 'Y', 'R', 'R']
-Back Face: ['R', 'B', 'G', 'G']
-Up face: ['Y', 'G', 'O', 'Y']
-Down face:['W', 'W', 'W', 'W']
-U inverse
-Front face: ['O', 'Y', 'B', 'B']
-Left Face: ['Y', 'G', 'O', 'O']
-Right Face: ['R', 'B', 'R', 'R']
-Back Face: ['R', 'B', 'G', 'G']
-Up face: ['O', 'Y', 'Y', 'G']
-Down face:['W', 'W', 'W', 'W']
-U2
-Front face: ['R', 'B', 'B', 'B']
-Left Face: ['R', 'B', 'O', 'O']
-Right Face: ['Y', 'G', 'R', 'R']
-Back Face: ['O', 'Y', 'G', 'G']
-Up face: ['G', 'Y', 'Y', 'O']
-Down face:['W', 'W', 'W', 'W']
-U
-Front face: ['R', 'B', 'B', 'B']
-Left Face: ['O', 'Y', 'O', 'O']
-Right Face: ['R', 'B', 'R', 'R']
-Back Face: ['Y', 'G', 'G', 'G']
-Up face: ['Y', 'O', 'G', 'Y']
-Down face:['W', 'W', 'W', 'W']
-R inverse
-Front face: ['R', 'O', 'B', 'Y']
-Left Face: ['O', 'Y', 'O', 'O']
-Right Face: ['B', 'R', 'R', 'R']
-Back Face: ['W', 'G', 'W', 'G']
-Up face: ['Y', 'G', 'G', 'Y']
-Down face:['W', 'B', 'W', 'B']
-R2
-Front face: ['R', 'W', 'B', 'W']
-Left Face: ['O', 'Y', 'O', 'O']
-Right Face: ['R', 'R', 'R', 'B']
-Back Face: ['Y', 'G', 'O', 'G']
-Up face: ['Y', 'B', 'G', 'B']
-Down face:['W', 'G', 'W', 'Y']
-R
-Front face: ['R', 'G', 'B', 'Y']
-Left Face: ['O', 'Y', 'O', 'O']
+Left Face: ['O', 'O', 'Y', 'O']
 Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'G', 'B', 'G']
-Up face: ['Y', 'W', 'G', 'W']
-Down face:['W', 'O', 'W', 'Y']
-L inverse
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144] [1]
+[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144] [1]
+L
 Front face: ['Y', 'G', 'G', 'Y']
 Left Face: ['O', 'O', 'O', 'Y']
 Right Face: ['R', 'R', 'B', 'R']
 Back Face: ['B', 'W', 'B', 'W']
 Up face: ['G', 'W', 'G', 'W']
 Down face:['R', 'O', 'B', 'Y']
-L2
-Front face: ['W', 'G', 'W', 'Y']
-Left Face: ['Y', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'G', 'B', 'Y']
-Up face: ['R', 'W', 'B', 'W']
-Down face:['G', 'O', 'G', 'Y']
-L
-Front face: ['G', 'G', 'G', 'Y']
-Left Face: ['O', 'O', 'Y', 'O']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'B', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'O', 'G', 'Y']
+L <__main__.RubiksState object at 0x75ff35ead0> R <__main__.RubiksState object at 0x75ff2bbb50> L moves ['L'] R moves []
 
 [Program finished]
-""" 
+
+"""
 class RubiksState(object):
     def __init__(self, tlf, blf, trf, brf, tlb, blb, trb, brb, moves):
         self.tlf = tlf
@@ -509,12 +406,51 @@ def EncodeToMove(e, State):
 		return T
 	else:
 		return State
-def divconq(n, m, L):
+		
+		
+#def divmore(n, m, L, R):
+#	print(L)
+#	if len(L) == 1 or len(L) == 2:
+#		return L[:]
+#	else:
+#		left = L[len(L)//2:]
+#		right = L[:len(L) // 2]
+#		left_subtree = divmore(0, 0, left, right)
+#		right_subtree = divmore(0, 0, right, right)
 
-	while m < len(L):
-		print(L[n:m])
-		n += 18
-		m += 18
+def wrap(L, R, State= RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])):
+		i, j = 0, 0
+		temp = []
+		print(L, R)
+		while i < len(L) and j < len(R):
+			l = EncodeToMove(L[i], State)
+			r = EncodeToMove(R[j], State)
+			print("L {} R {} L moves {} R moves {}".format(l, r, l.moves, r.moves))
+#			temp.append(EncodeToMove(L[i], State))
+			temp.append(EncodeToMove(R[j], State))
+			i += 1
+			j += 1
+		for e in temp:
+			if e.is_solved():
+				print("{} - solved".format(e.moves))
+def divconq(n, m, L):
+#	print(L)
+	if L == None:
+		L = []
+	if len(L) <= 18:
+		return L[::]
+	left = L[len(L)//18:]
+	right = L[:len(L) // 18]
+	print(left, right)
+	left_subtree = divconq(0, 0, left)
+	right_subtree = divconq(0, 0, right)
+	return wrap(left_subtree, right_subtree)
+#		return divmore(0, 0, left_subtree, right_subtree)
+		
+#	while m < len(L):
+#		print(L[n:m])
+#		n += 18
+#		m += 18
 		
 def Charles():
 	s = 2 ** 18 + 1
@@ -562,10 +498,22 @@ def Charles():
 	q = deque([])
 	q.append(State)
 	elems = [2 ** x for x in range(18, -1, -1)]
-	for e in elems:
-		print(bin(e))
-	for e in elems:
-		State = EncodeToMove(e, State)
+	divconq(0, 0, rep)
+#	for e in elems:
+#		print(bin(e))
+#	for e in elems:
+#		State = EncodeToMove(e, State)
+#	solved = False
+#	while n < 18 ** 6:
+#		ct = q.popleft()
+#		for e in elems:
+#			State = EncodeToMove(e, ct)
+#			q.append(State)
+#			print(State.moves)
+#			if State.is_solved() == True:
+#				print("Solved : {}".format(State.moves))
+#				sys.exit()
+#		n += 1
 #	n = int.from_bytes(b'100000000000000000')
 #	while n >= 0:
 #		print(n)
