@@ -1,5 +1,4 @@
 
-
 # Algorithn conceuved while a patient at Byron Bay Hospital Tuckeroo
 
 # Charles Thomas Wallace Truscott
@@ -287,58 +286,76 @@ import sys
 def EncodeToMove(e, State):
 	if e >> 18 == 1:
 		print("B inverse")
-		State.Binv()
+		T = State.Binv()
+		return T
 	elif e >> 17 == 1:
 		print("B2")
-		State.B2()
+		T = State.B2()
+		return T
 	elif e >> 16 == 1:
 		print("B")
-		State.B()
+		T = State.B()
+		return T
 	elif e >> 15 == 1:
 		print("F inverse")
-		State.Finv()
+		T = State.Finv()
+		return T
 	elif e >> 14 == 1:
 		print("F2")
-		State.F2()
+		T = State.F2()
+		return T
 	elif e >> 13 == 1:
 		print("F")
-		State.F()
+		T = State.F()
+		return T
 	elif e >> 12 == 1:
 		print("D inverse")
-		State.Dinv()
+		T = State.Dinv()
+		return T
 	elif e >> 11 == 1:
 		print("D2")
-		State.D2()
+		T = State.D2()
+		return T
 	elif e >> 10 == 1:
 		print("D")
-		State.D()
+		T = State.D()
+		return T
 	elif e >> 9 == 1:
 		print("U inverse")
-		State.Uinv()
+		T = State.Uinv()
+		return T
 	elif e >> 8 == 1:
 		print("U2")
-		State.U2()
+		T = State.U2()
+		return T
 	elif e >> 7 == 1:
 		print("U")
-		State.U()
+		T = State.U()
+		return T
 	elif e >> 6 == 1:
 		print("R inverse")
-		State.Rinv()
+		T = State.Rinv()
+		return T
 	elif e >> 5 == 1:
 		print("R2")
-		State.R2,()
+		T = State.R2()
+		return T
 	elif e >> 4 == 1:
 		print("R")
-		State.R()
+		T = State.R()
+		return T
 	elif e >> 3 == 1:
 		print("L inverse")
-		State.Linv()
+		T = State.Linv()
+		return T
 	elif e >> 2 == 1:
 		print("L2")
-		State.L2()
+		T = State.L2()
+		return T
 	elif e >> 1 == 1:
 		print("L")
-		State.L()
+		T = State.L()
+		return T
 def divconq(n, m, L):
 
 	while m < len(L):
@@ -392,17 +409,26 @@ def Charles():
 	q = deque([])
 	q.append(State)
 	print(q)
-	for e in res:
-		for r in e:
-			print(EncodeToMove(r,State))
-#	while s.is_solved() != True:
-#		n = q.popleft()
-#		print(n)
-#		for ans in res:
-#			print(EncodeToMove(ans, n)())
-			
-	print("Thank you so much edX, MITx and Harvard Online")
-	print("Trying to develop a polynomial or logarithmic time Rubik's 2 x 2 algorithm")
-	divconq(0, 18, res)
-	
+	print(res)
+	solved = False
+	n = 2 ** 18 + 1
+	while n > 0:
+		State = q.popleft()
+		print(State.moves)
+		q.append(EncodeToMove(n, State))
+		n //= 2
+#		for l in res:
+#			for e in l:
+#				ct = EncodeToMove(e, State)
+#				q.append(ct)
+#				if ct.is_solved() == True:
+#					solved = True
+#	solved = False
+#	while solved != True:
+#		t = q.popleft()
+#		for m in res:
+#			for e in m:
+#				q.append(EncodeToMove(e, t))
+#		if t.is_solved() == True:
+#			solved = True
 Charles()
