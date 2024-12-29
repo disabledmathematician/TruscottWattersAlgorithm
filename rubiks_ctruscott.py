@@ -1,100 +1,4 @@
 
-""" Initial: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
-Consequentual: [[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]]
-Charles Truscott Watters
-Trying divide and conquer trees
-I love you Tai, I love you Mark
-Front face: ['G', 'G', 'G', 'Y']
-Left Face: ['O', 'O', 'Y', 'O']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'B', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'O', 'G', 'Y']
-L
-Front face: ['Y', 'G', 'G', 'Y']
-Left Face: ['O', 'O', 'O', 'Y']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'W', 'B', 'W']
-Up face: ['G', 'W', 'G', 'W']
-Down face:['R', 'O', 'B', 'Y']
-L2
-Front face: ['R', 'G', 'B', 'Y']
-Left Face: ['O', 'Y', 'O', 'O']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'G', 'B', 'G']
-Up face: ['Y', 'W', 'G', 'W']
-Down face:['W', 'O', 'W', 'Y']
-L inverse
-Front face: ['W', 'G', 'W', 'Y']
-Left Face: ['Y', 'O', 'O', 'O']
-Right Face: ['R', 'R', 'B', 'R']
-Back Face: ['B', 'G', 'B', 'Y']
-Up face: ['R', 'W', 'B', 'W']
-Down face:['G', 'O', 'G', 'Y']
-R
-Front face: ['G', 'O', 'G', 'Y']
-Left Face: ['O', 'O', 'Y', 'O']
-Right Face: ['B', 'R', 'R', 'R']
-Back Face: ['W', 'B', 'W', 'R']
-Up face: ['W', 'G', 'W', 'Y']
-Down face:['Y', 'B', 'G', 'B']
-R2
-R inverse
-Front face: ['G', 'W', 'G', 'W']
-Left Face: ['O', 'O', 'Y', 'O']
-Right Face: ['R', 'R', 'R', 'B']
-Back Face: ['Y', 'B', 'O', 'R']
-Up face: ['W', 'B', 'W', 'B']
-Down face:['Y', 'G', 'G', 'Y']
-U
-Front face: ['O', 'O', 'G', 'Y']
-Left Face: ['B', 'B', 'Y', 'O']
-Right Face: ['G', 'G', 'B', 'R']
-Back Face: ['R', 'R', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'O', 'G', 'Y']
-U2
-Front face: ['B', 'B', 'G', 'Y']
-Left Face: ['R', 'R', 'Y', 'O']
-Right Face: ['O', 'O', 'B', 'R']
-Back Face: ['G', 'G', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'O', 'G', 'Y']
-U inverse
-Front face: ['R', 'R', 'G', 'Y']
-Left Face: ['G', 'G', 'Y', 'O']
-Right Face: ['B', 'B', 'B', 'R']
-Back Face: ['O', 'O', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'O', 'G', 'Y']
-D
-Front face: ['G', 'G', 'Y', 'O']
-Left Face: ['O', 'O', 'B', 'R']
-Right Face: ['R', 'R', 'G', 'Y']
-Back Face: ['B', 'B', 'B', 'R']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['G', 'Y', 'Y', 'O']
-D2
-Front face: ['G', 'G', 'B', 'R']
-Left Face: ['O', 'O', 'B', 'R']
-Right Face: ['R', 'R', 'Y', 'O']
-Back Face: ['B', 'B', 'G', 'Y']
-Up face: ['W', 'W', 'W', 'W']
-Down face:['Y', 'G', 'O', 'Y']
-D inverse
-Traceback (most recent call last):
-  File "/data/user/0/ru.iiec.pydroid3/files/accomp_files/iiec_run/iiec_run.py", line 31, in <module>
-    start(fakepyfile,mainpyfile)
-  File "/data/user/0/ru.iiec.pydroid3/files/accomp_files/iiec_run/iiec_run.py", line 30, in start
-    exec(open(mainpyfile).read(),  __main__.__dict__)
-  File "<string>", line 381, in <module>
-  File "<string>", line 376, in Charles
-  File "<string>", line 295, in EncodeToMove
-AttributeError: 'RubiksState' object has no attribute 'Dnv'. Did you mean: 'Dinv'?
-
-[Program finished]
-
-"""
 
 # Algorithn conceuved while a patient at Byron Bay Hospital Tuckeroo
 
@@ -401,7 +305,7 @@ def EncodeToMove(e, State):
 		State.F()
 	elif e >> 12 == 1:
 		print("D inverse")
-		State.Dnv()
+		State.Dinv()
 	elif e >> 11 == 1:
 		print("D2")
 		State.D2()
@@ -470,19 +374,33 @@ def Charles():
 #		res += str(bin(s))
 #		s >>= 1
 #		n += 1
-	print("Initial: {}".format(rep))
-	print("Consequentual: {}".format(res))
+#	print("Initial: {}".format(rep))
+#	print("Consequentual: {}".format(res))
 #	res = res.split(",")
 #	print(res[0:17])
 #	print(res[18: 2 * 18])
 #	print(res[2 * 18: 3 * 18])
-	print("Charles Truscott Watters")
-	print("Trying divide and conquer trees")
-	print("I love you Tai, I love you Mark")
+#	print("Charles Truscott Watters")
+#	print("Trying divide and conquer trees")
+#	print("I love you Tai, I love you Mark")
 	State= RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
+#	for e in res:
+#		for m in e:
+#			EncodeToMove(m, State)
+			
+	s = State
+	q = deque([])
+	q.append(State)
+	print(q)
 	for e in res:
-		for m in e:
-			EncodeToMove(m, State)
+		for r in e:
+			print(EncodeToMove(r,State))
+#	while s.is_solved() != True:
+#		n = q.popleft()
+#		print(n)
+#		for ans in res:
+#			print(EncodeToMove(ans, n)())
+			
 	print("Thank you so much edX, MITx and Harvard Online")
 	print("Trying to develop a polynomial or logarithmic time Rubik's 2 x 2 algorithm")
 	divconq(0, 18, res)
