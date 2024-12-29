@@ -665,15 +665,6 @@ def EncodeToMove(e, State):
 	else: 
 		return State
 		
-#def divmore(n, m, L, R):
-#	print(L)
-#	if len(L) == 1 or len(L) == 2:
-#		return L[:]
-#	else:
-#		left = L[len(L)//2:]
-#		right = L[:len(L) // 2]
-#		left_subtree = divmore(0, 0, left, right)
-#		right_subtree = divmore(0, 0, right, right)
 
 def wrap(L, R, State):
 		i, j = 0, 0
@@ -703,8 +694,7 @@ def divconq(n, m, L, State):
 	left_subtree = divconq(0, 0, left, State)
 	right_subtree = divconq(0, 0, right, State)
 	return wrap(left_subtree, right_subtree, State)
-#		return divmore(0, 0, left_subtree, right_subtree)
-		
+
 #	while m < len(L):
 #		print(L[n:m])
 #		n += 18
@@ -717,22 +707,12 @@ def caller(State):
 	divconq(0, 0, elems, State)
 	
 def Charles():
-	s = 2 ** 18 + 1
-#	rep = ""
 	rep = []
 	res = []
-#	res = ""
 	n = 0
 	while n <= 18:
-#		print(str(bin(2 **n)[2:]))
-#		print(",")
-#
 		rep.append(2 ** n)
 #		rep += str(bin(2 ** n)[2:])
-#		rep += str(bin(2 ** n))
-#		rep += ','
-#		if n <= 17:
-#			rep += ","
 		n += 1
 	n = 0
 	while n <= 18 ** 2:
@@ -754,10 +734,7 @@ def Charles():
 #	print("Trying divide and conquer trees")
 #	print("I love you Tai, I love you Mark")
 	State= RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
-#	for e in res:
-#		for m in e:
-			
-			
+
 	s = State
 	q = deque([])
 	q.append(State)
@@ -765,50 +742,5 @@ def Charles():
 #	elems *= 10
 	tt = divconq(0, 0, elems, State)
 	print(tt)
-#	for e in elems:
-#		print(bin(e))
-#	for e in elems:
-#		State = EncodeToMove(e, State)
-#	solved = False
-#	while n < 18 ** 6:
-#		ct = q.popleft()
-#		for e in elems:
-#			State = EncodeToMove(e, ct)
-#			q.append(State)
-#			print(State.moves)
-#			if State.is_solved() == True:
-#				print("Solved : {}".format(State.moves))
-#				sys.exit()
-#		n += 1
-#	n = int.from_bytes(b'100000000000000000')
-#	while n >= 0:
-#		print(n)
-#		d = EncodeToMove(n, State)
-#		print(d.moves)
-#		print(bin(n))
-#		print("\n'")
-#		n >>= 1
-#		if n <= 0:
-#			break
-#	State = q.popleft()
-#	for e in rep: 
-#		print(State.moves)
-#		q.append(EncodeToMove(e, State))
-#	for elem in q:
-#		print(elem, elem.moves)
-#		n >>= 1
-#		for l in res:
-#			for e in l:
-#				ct = EncodeToMove(e, State)
-#				q.append(ct)
-#				if ct.is_solved() == True:
-#					solved = True
-#	solved = False
-#	while solved != True:
-#		t = q.popleft()
-#		for m in res:
-#			for e in m:
-#				q.append(EncodeToMove(e, t))
-#		if t.is_solved() == True:
-#			solved = True
+
 Charles()
