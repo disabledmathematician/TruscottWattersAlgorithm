@@ -356,6 +356,8 @@ def EncodeToMove(e, State):
 		print("L")
 		T = State.L()
 		return T
+	else:
+		return State
 def divconq(n, m, L):
 
 	while m < len(L):
@@ -403,20 +405,29 @@ def Charles():
 	State= RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
 #	for e in res:
 #		for m in e:
-#			EncodeToMove(m, State)
+			
 			
 	s = State
 	q = deque([])
 	q.append(State)
 	print(q)
-	print(res)
-	solved = False
-	n = 2 ** 18 + 1
-	while n > 0:
-		State = q.popleft()
-		print(State.moves)
-		q.append(EncodeToMove(n, State))
-		n //= 2
+	n = int.from_bytes(b'100000000000000000')
+	while n >= 0:
+#		print(n)
+		d = EncodeToMove(n, State)
+		print(d.moves)
+		print(bin(n))
+		print("\n'")
+		n >>= 1
+		if n <= 0:
+			break
+#	State = q.popleft()
+#	for e in rep: 
+#		print(State.moves)
+#		q.append(EncodeToMove(e, State))
+#	for elem in q:
+#		print(elem, elem.moves)
+#		n >>= 1
 #		for l in res:
 #			for e in l:
 #				ct = EncodeToMove(e, State)
