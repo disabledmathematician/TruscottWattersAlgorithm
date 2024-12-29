@@ -1,15 +1,166 @@
 
-# Algorithn conceuved while a patient at Byron Bay Hospital Tuckeroo
+# Algorithn conceived while a patient at Byron Bay Hospital Tuckeroo
 
 # Charles Thomas Wallace Truscott
+# Thank you Eric Grimson, John Guttag and Ana Bell and the MIT faculty 
+
+# Thank you edX.org
 
 # Byron Bay NSW 2481
+""" Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+0b1000000000000000000
+0b100000000000000000
+0b10000000000000000
+0b1000000000000000
+0b100000000000000
+0b10000000000000
+0b1000000000000
+0b100000000000
+0b10000000000
+0b1000000000
+0b100000000
+0b10000000
+0b1000000
+0b100000
+0b10000
+0b1000
+0b100
+0b10
+0b1
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['R', 'Y', 'R', 'O']
+Right Face: ['W', 'Y', 'W', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'O', 'O']
+Down face:['B', 'R', 'W', 'W']
+F2
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['R', 'W', 'R', 'W']
+Right Face: ['O', 'Y', 'Y', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'R', 'B']
+Down face:['O', 'O', 'W', 'W']
+F
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['R', 'B', 'R', 'R']
+Right Face: ['O', 'Y', 'O', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'O', 'Y']
+Down face:['W', 'W', 'W', 'W']
+D inverse
+Front face: ['Y', 'G', 'O', 'O']
+Left Face: ['R', 'B', 'G', 'G']
+Right Face: ['O', 'Y', 'B', 'B']
+Back Face: ['R', 'B', 'R', 'R']
+Up face: ['Y', 'G', 'O', 'Y']
+Down face:['W', 'W', 'W', 'W']
+D2
+Front face: ['Y', 'G', 'R', 'R']
+Left Face: ['R', 'B', 'B', 'B']
+Right Face: ['O', 'Y', 'G', 'G']
+Back Face: ['R', 'B', 'O', 'O']
+Up face: ['Y', 'G', 'O', 'Y']
+Down face:['W', 'W', 'W', 'W']
+D
+Front face: ['Y', 'G', 'B', 'B']
+Left Face: ['R', 'B', 'O', 'O']
+Right Face: ['O', 'Y', 'R', 'R']
+Back Face: ['R', 'B', 'G', 'G']
+Up face: ['Y', 'G', 'O', 'Y']
+Down face:['W', 'W', 'W', 'W']
+U inverse
+Front face: ['O', 'Y', 'B', 'B']
+Left Face: ['Y', 'G', 'O', 'O']
+Right Face: ['R', 'B', 'R', 'R']
+Back Face: ['R', 'B', 'G', 'G']
+Up face: ['O', 'Y', 'Y', 'G']
+Down face:['W', 'W', 'W', 'W']
+U2
+Front face: ['R', 'B', 'B', 'B']
+Left Face: ['R', 'B', 'O', 'O']
+Right Face: ['Y', 'G', 'R', 'R']
+Back Face: ['O', 'Y', 'G', 'G']
+Up face: ['G', 'Y', 'Y', 'O']
+Down face:['W', 'W', 'W', 'W']
+U
+Front face: ['R', 'B', 'B', 'B']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'B', 'R', 'R']
+Back Face: ['Y', 'G', 'G', 'G']
+Up face: ['Y', 'O', 'G', 'Y']
+Down face:['W', 'W', 'W', 'W']
+R inverse
+Front face: ['R', 'O', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'G', 'W', 'G']
+Up face: ['Y', 'G', 'G', 'Y']
+Down face:['W', 'B', 'W', 'B']
+R2
+Front face: ['R', 'W', 'B', 'W']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'G', 'O', 'G']
+Up face: ['Y', 'B', 'G', 'B']
+Down face:['W', 'G', 'W', 'Y']
+R
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+L inverse
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+L2
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+L
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
 
-# I love you Dad Mark William
-
-# Thank you so much Guttag and Grumson and all at MITx
-
-# Work in progress
+[Program finished]
+""" 
 class RubiksState(object):
     def __init__(self, tlf, blf, trf, brf, tlb, blb, trb, brb, moves):
         self.tlf = tlf
@@ -410,17 +561,21 @@ def Charles():
 	s = State
 	q = deque([])
 	q.append(State)
-	print(q)
-	n = int.from_bytes(b'100000000000000000')
-	while n >= 0:
+	elems = [2 ** x for x in range(18, -1, -1)]
+	for e in elems:
+		print(bin(e))
+	for e in elems:
+		State = EncodeToMove(e, State)
+#	n = int.from_bytes(b'100000000000000000')
+#	while n >= 0:
 #		print(n)
-		d = EncodeToMove(n, State)
-		print(d.moves)
-		print(bin(n))
-		print("\n'")
-		n >>= 1
-		if n <= 0:
-			break
+#		d = EncodeToMove(n, State)
+#		print(d.moves)
+#		print(bin(n))
+#		print("\n'")
+#		n >>= 1
+#		if n <= 0:
+#			break
 #	State = q.popleft()
 #	for e in rep: 
 #		print(State.moves)
