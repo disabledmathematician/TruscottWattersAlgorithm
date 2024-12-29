@@ -1,0 +1,2653 @@
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+deque([<__main__.RubiksState object at 0x737f296350>])
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+None
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
+None
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
+None
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
+None
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
+None
+R2
+None
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
+None
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
+None
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
+None
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
+None
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
+None
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
+None
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
+None
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
+None
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
+None
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
+None
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
+None
+Thank you so much edX, MITx and Harvard Online
+Trying to develop a polynomial or logarithmic time Rubik's 2 x 2 algorithm
+[[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144], [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]]
+
+[Program finished]
