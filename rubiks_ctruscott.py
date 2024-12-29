@@ -48,7 +48,21 @@ Right Face: ['R', 'Y', 'B', 'O']
 Back Face: ['R', 'B', 'B', 'B']
 Up face: ['Y', 'G', 'W', 'W']
 Down face:['Y', 'O', 'W', 'W']
+B2
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['R', 'O', 'R', 'O']
+Right Face: ['R', 'Y', 'B', 'O']
+Back Face: ['R', 'B', 'B', 'B']
+Up face: ['Y', 'G', 'W', 'W']
+Down face:['Y', 'O', 'W', 'W']
 ['B2']
+B
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['W', 'O', 'W', 'O']
+Right Face: ['R', 'Y', 'B', 'G']
+Back Face: ['B', 'B', 'R', 'B']
+Up face: ['R', 'R', 'W', 'W']
+Down face:['Y', 'O', 'O', 'Y']
 B
 Front face: ['G', 'G', 'G', 'Y']
 Left Face: ['W', 'O', 'W', 'O']
@@ -64,7 +78,21 @@ Right Face: ['W', 'R', 'W', 'R']
 Back Face: ['B', 'B', 'B', 'R']
 Up face: ['W', 'W', 'O', 'O']
 Down face:['B', 'R', 'G', 'Y']
+F inverse
+Front face: ['G', 'G', 'Y', 'G']
+Left Face: ['O', 'Y', 'Y', 'O']
+Right Face: ['W', 'R', 'W', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'O']
+Down face:['B', 'R', 'G', 'Y']
 ['F inverse']
+F2
+Front face: ['Y', 'G', 'G', 'G']
+Left Face: ['O', 'B', 'Y', 'R']
+Right Face: ['O', 'R', 'O', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'O', 'Y']
+Down face:['W', 'W', 'G', 'Y']
 F2
 Front face: ['Y', 'G', 'G', 'G']
 Left Face: ['O', 'B', 'Y', 'R']
@@ -80,7 +108,21 @@ Right Face: ['O', 'R', 'Y', 'R']
 Back Face: ['B', 'B', 'B', 'R']
 Up face: ['W', 'W', 'R', 'B']
 Down face:['O', 'O', 'G', 'Y']
+F
+Front face: ['G', 'Y', 'G', 'G']
+Left Face: ['O', 'W', 'Y', 'W']
+Right Face: ['O', 'R', 'Y', 'R']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'R', 'B']
+Down face:['O', 'O', 'G', 'Y']
 ['F']
+D inverse
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'G', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'B', 'Y', 'O']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['O', 'Y', 'Y', 'G']
 D inverse
 Front face: ['G', 'G', 'B', 'R']
 Left Face: ['O', 'O', 'G', 'Y']
@@ -96,7 +138,21 @@ Right Face: ['R', 'R', 'Y', 'O']
 Back Face: ['B', 'B', 'G', 'Y']
 Up face: ['W', 'W', 'W', 'W']
 Down face:['Y', 'G', 'O', 'Y']
+D2
+Front face: ['G', 'G', 'B', 'R']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'Y', 'O']
+Back Face: ['B', 'B', 'G', 'Y']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'G', 'O', 'Y']
 ['D2']
+D
+Front face: ['G', 'G', 'Y', 'O']
+Left Face: ['O', 'O', 'B', 'R']
+Right Face: ['R', 'R', 'G', 'Y']
+Back Face: ['B', 'B', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['G', 'Y', 'Y', 'O']
 D
 Front face: ['G', 'G', 'Y', 'O']
 Left Face: ['O', 'O', 'B', 'R']
@@ -112,7 +168,21 @@ Right Face: ['B', 'B', 'B', 'R']
 Back Face: ['O', 'O', 'B', 'R']
 Up face: ['W', 'W', 'W', 'W']
 Down face:['Y', 'O', 'G', 'Y']
+U inverse
+Front face: ['R', 'R', 'G', 'Y']
+Left Face: ['G', 'G', 'Y', 'O']
+Right Face: ['B', 'B', 'B', 'R']
+Back Face: ['O', 'O', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
 ['U inverse']
+U2
+Front face: ['B', 'B', 'G', 'Y']
+Left Face: ['R', 'R', 'Y', 'O']
+Right Face: ['O', 'O', 'B', 'R']
+Back Face: ['G', 'G', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
 U2
 Front face: ['B', 'B', 'G', 'Y']
 Left Face: ['R', 'R', 'Y', 'O']
@@ -128,7 +198,21 @@ Right Face: ['G', 'G', 'B', 'R']
 Back Face: ['R', 'R', 'B', 'R']
 Up face: ['W', 'W', 'W', 'W']
 Down face:['Y', 'O', 'G', 'Y']
+U
+Front face: ['O', 'O', 'G', 'Y']
+Left Face: ['B', 'B', 'Y', 'O']
+Right Face: ['G', 'G', 'B', 'R']
+Back Face: ['R', 'R', 'B', 'R']
+Up face: ['W', 'W', 'W', 'W']
+Down face:['Y', 'O', 'G', 'Y']
 ['U']
+R inverse
+Front face: ['G', 'W', 'G', 'W']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'R', 'R', 'B']
+Back Face: ['Y', 'B', 'O', 'R']
+Up face: ['W', 'B', 'W', 'B']
+Down face:['Y', 'G', 'G', 'Y']
 R inverse
 Front face: ['G', 'W', 'G', 'W']
 Left Face: ['O', 'O', 'Y', 'O']
@@ -144,7 +228,21 @@ Right Face: ['R', 'B', 'R', 'R']
 Back Face: ['Y', 'B', 'G', 'R']
 Up face: ['W', 'O', 'W', 'Y']
 Down face:['Y', 'W', 'G', 'W']
+R2
+Front face: ['G', 'B', 'G', 'B']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['R', 'B', 'R', 'R']
+Back Face: ['Y', 'B', 'G', 'R']
+Up face: ['W', 'O', 'W', 'Y']
+Down face:['Y', 'W', 'G', 'W']
 ['R2']
+R
+Front face: ['G', 'O', 'G', 'Y']
+Left Face: ['O', 'O', 'Y', 'O']
+Right Face: ['B', 'R', 'R', 'R']
+Back Face: ['W', 'B', 'W', 'R']
+Up face: ['W', 'G', 'W', 'Y']
+Down face:['Y', 'B', 'G', 'B']
 R
 Front face: ['G', 'O', 'G', 'Y']
 Left Face: ['O', 'O', 'Y', 'O']
@@ -160,6 +258,13 @@ Right Face: ['R', 'R', 'B', 'R']
 Back Face: ['B', 'G', 'B', 'Y']
 Up face: ['R', 'W', 'B', 'W']
 Down face:['G', 'O', 'G', 'Y']
+L inverse
+Front face: ['W', 'G', 'W', 'Y']
+Left Face: ['Y', 'O', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'Y']
+Up face: ['R', 'W', 'B', 'W']
+Down face:['G', 'O', 'G', 'Y']
 ['L inverse']
 L2
 Front face: ['R', 'G', 'B', 'Y']
@@ -168,7 +273,21 @@ Right Face: ['R', 'R', 'B', 'R']
 Back Face: ['B', 'G', 'B', 'G']
 Up face: ['Y', 'W', 'G', 'W']
 Down face:['W', 'O', 'W', 'Y']
+L2
+Front face: ['R', 'G', 'B', 'Y']
+Left Face: ['O', 'Y', 'O', 'O']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'G', 'B', 'G']
+Up face: ['Y', 'W', 'G', 'W']
+Down face:['W', 'O', 'W', 'Y']
 ['L2']
+L
+Front face: ['Y', 'G', 'G', 'Y']
+Left Face: ['O', 'O', 'O', 'Y']
+Right Face: ['R', 'R', 'B', 'R']
+Back Face: ['B', 'W', 'B', 'W']
+Up face: ['G', 'W', 'G', 'W']
+Down face:['R', 'O', 'B', 'Y']
 L
 Front face: ['Y', 'G', 'G', 'Y']
 Left Face: ['O', 'O', 'O', 'Y']
@@ -185,11 +304,17 @@ Right Face: ['R', 'W', 'B', 'W']
 Back Face: ['B', 'R', 'B', 'B']
 Up face: ['Y', 'O', 'W', 'W']
 Down face:['Y', 'O', 'R', 'R']
+B inverse
+Front face: ['G', 'G', 'G', 'Y']
+Left Face: ['G', 'O', 'Y', 'O']
+Right Face: ['R', 'W', 'B', 'W']
+Back Face: ['B', 'R', 'B', 'B']
+Up face: ['Y', 'O', 'W', 'W']
+Down face:['Y', 'O', 'R', 'R']
 ['B inverse']
-[]
+[<__main__.RubiksState object at 0x75d4376990>, <__main__.RubiksState object at 0x75d4332c50>, <__main__.RubiksState object at 0x75d4376cd0>, <__main__.RubiksState object at 0x75d4377010>, <__main__.RubiksState object at 0x75d4377350>, <__main__.RubiksState object at 0x75d4377690>, <__main__.RubiksState object at 0x75d4377a10>, <__main__.RubiksState object at 0x75d4377d50>, <__main__.RubiksState object at 0x75d43840d0>, <__main__.RubiksState object at 0x75d4384410>, <__main__.RubiksState object at 0x75d4384710>, <__main__.RubiksState object at 0x75d4384a50>, <__main__.RubiksState object at 0x75d4384e90>, <__main__.RubiksState object at 0x75d43853d0>, <__main__.RubiksState object at 0x75d431bc10>, <__main__.RubiksState object at 0x75d4385c50>, <__main__.RubiksState object at 0x75d4385e50>, <__main__.RubiksState object at 0x75d42cf7d0>, <__main__.RubiksState object at 0x75d4386550>]
 
 [Program finished]
-
 """
 class RubiksState(object):
     def __init__(self, tlf, blf, trf, brf, tlb, blb, trb, brb, moves):
@@ -555,12 +680,12 @@ def wrap(L, R, State):
 		temp = []
 		while i < len(L):
 			l = EncodeToMove(L[i], State)
-#			temp.append(EncodeToMove(L[i], State))
+			temp.append(EncodeToMove(L[i], State))
 			print(l.moves)
 			i += 1
 		while j < len(R):
 			r = EncodeToMove(R[j], State)
-#			temp.append(EncodeToMove(R[j], State))
+			temp.append(EncodeToMove(R[j], State))
 			print(r.moves)
 			j += 1
 		return temp
