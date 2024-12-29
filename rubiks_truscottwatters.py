@@ -66,6 +66,7 @@ class RubiksState(object):
         print("Up face: {}".format(self.up_face))
         print("Down face:{}".format(self.down_face))
         self.moves = moves
+        self.is_solved()
     def L(self):
         """ TLF to TLB, TLB to BLB, BLB to BLF, BLF to TLF """
         ntlf, nblf, ntlb, nblb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -304,13 +305,15 @@ class RubiksState(object):
         #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
         return n
     def is_solved(self):
+        import os
+        import sys
         if self.blb == ['Y', 'O', 'B'] and self.tlb == ['W', 'O', 'B'] and self.brb == ['Y', 'R', 'B'] and self.trb == ['W', 'R', 'B'] and self.blf == ['Y', 'O', 'G'] and self.tlf == ['W', 'O', 'G'] and self.brf == ['Y', 'R', 'G'] and self.trf == ['W', 'R', 'G']:
             print('Solved: {}'.format(self.moves))
-#            exit(1)
+            sys.exit(1)
         if self.front_face == ['G', 'G', 'G', 'G'] and self.back_face == ['B', 'B', 'B', 'B'] and self.left_face == ['O', 'O', 'O', 'O'] and self.right_face == ['R', 'R', 'R', 'R'] and self.up_face == ['W', 'W', 'W', 'W'] and self.down_face == ['Y', 'Y', 'Y', 'Y']:
+            print("SOLVED: {}".format(self.moves))
+            sys.exit(1)
             return True
-        else:
-            return False
 from queue import deque
 import sys
 
@@ -458,7 +461,7 @@ def Charles():
 #	print("Charles Truscott Watters")
 #	print("Trying divide and conquer trees")
 #	print("I love you Tai, I love you Mark")
-	State= RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
+	State= RubiksState(["W", "O", "G"], ["Y", "B", "O"],  ["O", "G", "Y"], ["W", "G", "R"], ["W", "B", "R"], ["Y", "B", "R"], ["Y", "R", "G"], ["Y", "W", "O"], [])
 
 	s = State
 	q = deque([])
@@ -487,6 +490,7 @@ def Charles():
 		novi = caller(e)
 		for q in novi:
 			print(q, q.moves)
+			
 #		tt2.append(novi)
 #	for e in tt2:
 #		print(e, e.moves)

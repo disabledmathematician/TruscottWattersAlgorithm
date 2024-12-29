@@ -63,6 +63,8 @@ class RubiksState(object):
         print("Up face: {}".format(self.up_face))
         print("Down face:{}".format(self.down_face))
         self.moves = moves
+        if self.is_solved():
+        	print("SOLVED: {}".format(self.moves))
     def L(self):
         """ TLF to TLB, TLB to BLB, BLB to BLF, BLF to TLF """
         ntlf, nblf, ntlb, nblb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
@@ -314,7 +316,7 @@ def Charles():
     States = deque([])
 #    n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
     all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
-    n = RubiksState(["W", "O", "G"], ["Y", "O", "G"],  ["W", "R", "G"], ["O", "B", "Y"], ["W", "O", "B"], ["G", "Y", "R"], ["W", "R", "B"], ["Y", "R", "B"], [])
+    n = RubiksState(["W", "O", "G"], ["Y", "B", "O"],  ["O", "G", "Y"], ["W", "G", "R"], ["W", "B", "R"], ["Y", "B", "R"], ["Y", "R", "G"], ["Y", "W", "O"], [])
     initial_state = n.orientation
 #    print(all_states)
 #    sys.exit(1)
