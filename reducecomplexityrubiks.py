@@ -336,16 +336,17 @@ def Charles():
     	for move in moves:
 	    	d[k].append(move(k))
     c = 3
-    while c < 6:
+    while c <= 10:
         for k,v in d.copy().items():
 #        print(k, v)
             for e in v:
             	d[e] = []
             	for move in moves:
             		d[e].append(move(e))
-            	if e.is_solved() == True:
-            		print("Solved")
-            		break
+          	  	if move(e).is_solved() == True:
+          	  		print("Solved")
+          	  		print("{}, {}".format(move(e).moves, move(e).state))
+            			break
         c += 1
 #    print(d)
     for k, v in d.items():
