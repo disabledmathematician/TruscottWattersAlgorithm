@@ -321,7 +321,8 @@ def Charles():
     States = deque([])
 #    n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
     all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
-    n = RubiksState(["W", "O", "G"], ["B", "Y", "R"],  ["W", "B", "R"], ["Y", "R", "G"], ["R", "G", "W"], ["Y", "G", "O"], ["W", "B", "O"], ["Y", "B", "O"], [])
+    n = RubiksState(["W", "O", "G"], ["G", "W", "R"],  ["R", "Y", "G"], ["Y", "B", "R"], ["R", "W", "B"], ["Y", "G", "O"], ["W", "B", "O"], ["Y", "B", "O"], [])
+#    n = RubiksState(["W", "O", "G"], ["B", "Y", "R"],  ["W", "B", "R"], ["Y", "R", "G"], ["R", "G", "W"], ["Y", "G", "O"], ["W", "B", "O"], ["Y", "B", "O"], [])
     initial_state = n.orientation
 #    print(all_states)
 #    sys.exit(1)
@@ -337,7 +338,7 @@ def Charles():
     	for move in moves:
 	    	d[k].append(move(k))
     c = 3
-    while c <= 4:
+    while c <= 8:
         for k,v in d.copy().items():
             for e in v:
             	d[e] = []

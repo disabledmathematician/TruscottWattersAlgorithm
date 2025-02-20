@@ -82,10 +82,16 @@ class RubiksState(object):
         """ TLF to BLB, BLB to TLF, TLB to BLF, BLF to TLB """
         ntlf, nblf, ntlb, nblb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
         ttlf, tblf, ttlb, tblb = self.tlf, self.blf, self.tlb, self.blb
-        nblb[0], nblb[1], nblb[2] = ttlf[0], ttlf[1], ttlf[2]
-        ntlf[0], ntlf[1], ntlf[2] = tblb[0], tblb[1], tblb[2]
-        nblf[0], nblf[1], nblf[2] = ttlb[0], ttlb[1], ttlb[2]
-        ntlb[0], ntlb[1], ntlb[2] = tblf[0], tblf[1], tblf[2]
+        ntlf[0], ntlf[1], ntlf[2] = tblf[2], tblf[1], tblf[0]
+        nblf[0], nblf[1], nblf[2] = tblb[2], tblb[1], tblb[0]
+        ntlb[0], ntlb[1], ntlb[2] = ttlf[2], ttlf[1], ttlf[0]
+        nblb[0], nblb[1], nblb[2] = ttlb[2], ttlb[1], ttlb[0]
+        ntlf, nblf, ntlb, nblb = [0] * 3, [0] * 3, [0] * 3, [0] * 3
+        ttlf, tblf, ttlb, tblb = self.tlf, self.blf, self.tlb, self.blb
+        ntlf[0], ntlf[1], ntlf[2] = tblf[2], tblf[1], tblf[0]
+        nblf[0], nblf[1], nblf[2] = tblb[2], tblb[1], tblb[0]
+        ntlb[0], ntlb[1], ntlb[2] = ttlf[2], ttlf[1], ttlf[0]
+        nblb[0], nblb[1], nblb[2] = ttlb[2], ttlb[1], ttlb[0]
         moves = self.moves.copy()
         moves.append('L2')
         n = RubiksState(ntlf, nblf, self.trf.copy(), self.brf.copy(), ntlb, nblb, self.trb.copy(), self.brb.copy(), moves)
@@ -316,12 +322,13 @@ def Charles():
     States = deque([])
 #    n = RubiksState(['O', 'B', 'Y'], ['R', 'B', 'Y', ], ['O', 'G', 'Y'], ['R', 'G', 'Y'], ['O', 'B', 'W'], ['R', 'B', 'W'], ['O', 'G', 'W'], ['R', 'G', 'W'], [])
     all_states = [n for n in itertools.permutations([['G', 'G', 'G', 'G'], ['B', 'B', 'B', 'B'], ['O', 'O', 'O', 'O'], ['R', 'R', 'R', 'R'], ['W', 'W', 'W', 'W'], ['Y', 'Y', 'Y', 'Y']])]
-    n = RubiksState(["W", "O", "G"], ["B", "Y", "R"],  ["W", "B", "R"], ["Y", "R", "G"], ["R", "G", "W"], ["Y", "G", "O"], ["W", "B", "O"], ["Y", "B", "O"], [])
+    n = RubiksState(["W", "O", "G"], ["G", "W", "R"],  ["B", "R", "W"], ["R", "Y", "B"], ["W", "O", "B"], ["Y", "O", "B"], ["W", "R", "G"], ["G", "Y", "O"], [])
+#    n = RubiksState(["W", "O", "G"], ["B", "Y", "R"],  ["W", "B", "R"], ["Y", "R", "G"], ["R", "G", "W"], ["Y", "G", "O"], ["W", "B", "O"], ["Y", "B", "O"], [])
     initial_state = n.orientation
 #    print(all_states)
 #    sys.exit(1)
     #tlf, blf, trf, brf, tlb, blb, trb, brb, moves
-    moves = [lambda s: s.L(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.F(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.Binv()]
+    moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.F(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.Binv()]
  #   moves = [lambda s: s.L(), lambda s: s.L2(), lambda s: s.Linv(), lambda s: s.R(), lambda s: s.R2(), lambda s: s.Rinv(), lambda s: s.U(), lambda s: s.U2(), lambda s: s.Uinv(), lambda s: s.D(), lambda s: s.D2(), lambda s: s.Dinv(), lambda s: s.F(), lambda s: s.F2(), lambda s: s.Finv(), lambda s: s.B(), lambda s: s.B2(), lambda s: s.Binv()]
     States.append(n)
     c = 0
