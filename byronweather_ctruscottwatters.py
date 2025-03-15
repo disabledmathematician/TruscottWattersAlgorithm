@@ -1,10 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.pipeline import make_pipeline
-import scipy.stats as ss
+#import scipy.stats as ss
 import math
 
 #def Poisson(mean, e, vals):
@@ -16,7 +13,15 @@ import math
 #		y.append(((mean ** v) * (e ** -mean))/math.factorial(v))
 #	print(x, y)
 #	return x, y
-	
+def linsearch(rain_xs, rain_probs):
+	c = 0
+	m = max(rain_probs)
+	for x in range(len(rain_probs)):
+		if rain_probs[c]  == m:
+			break
+		c += 1
+	print("The highest chance of the predicted most daily rain is {} at {} percent".format(rain_xs[c], rain_xs[c] * rain_probs[c] * 10))
+			
 def Gaussian(mean, stddev, vals):
 	
 	x = []
@@ -42,12 +47,14 @@ def Charles():
 	ax1.set_ylabel("mm rain")
 	ax2 = plt.subplot(1, 4, 2)
 	x2, y2 = Gaussian(mean, stddev, rain)
+	linsearch(x2, y2)
+	print("x {} y {}".format(x2, y2))
 	ax2.title.set_text("Normal Distribution as probability of highest volume rain")
 	ax2.set_xlabel("Rainfall")
 	ax2.set_ylabel('Probability of rainfall')
 	plt.scatter(x2, y2)
 	ax3 = plt.subplot(1, 4, 3)
-	x3, y3 = Gaussian(mean, stddev, [rf for rf in range(0, 300)])
+	x3, y3 = Gaussian(mean, stddev, sorted(rain))
 	ax3.title.set_text("Normal Distribution as probability of highest volume rain")
 	ax3.set_xlabel("Rainfall")
 	ax3.set_ylabel('Probability of rainfall')
@@ -57,6 +64,6 @@ def Charles():
 	ax4.title.set_text("Highest Volume of Daily Rainfall Byron Bay")
 	ax4.set_xlabel("Volume")
 	ax4.set_ylabel("Frequency")
-
-	plt.savefig('all.png')
+	plt.show()
+#	plt.savefig('all.png')
 Charles()
